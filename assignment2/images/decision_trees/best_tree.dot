@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="mean radius <= 15.025\ngini = 0.463\nsamples = 483\nvalue = [176, 307]\nclass = 1", fillcolor="#abd5f4"] ;
+1 [label="worst compactness <= 0.367\ngini = 0.213\nsamples = 338\nvalue = [41, 297]\nclass = 1", fillcolor="#54abe9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="worst concavity <= 0.266\ngini = 0.095\nsamples = 300\nvalue = [15, 285]\nclass = 1", fillcolor="#43a2e6"] ;
+1 -> 2 ;
+3 [label="gini = 0.023\nsamples = 254\nvalue = [3, 251]\nclass = 1", fillcolor="#3b9ee5"] ;
+2 -> 3 ;
+4 [label="gini = 0.386\nsamples = 46\nvalue = [12, 34]\nclass = 1", fillcolor="#7fc0ee"] ;
+2 -> 4 ;
+5 [label="worst smoothness <= 0.149\ngini = 0.432\nsamples = 38\nvalue = [26, 12]\nclass = 0", fillcolor="#f1bb94"] ;
+1 -> 5 ;
+6 [label="gini = 0.337\nsamples = 14\nvalue = [3, 11]\nclass = 1", fillcolor="#6fb8ec"] ;
+5 -> 6 ;
+7 [label="gini = 0.08\nsamples = 24\nvalue = [23, 1]\nclass = 0", fillcolor="#e68642"] ;
+5 -> 7 ;
+8 [label="worst concavity <= 0.216\ngini = 0.128\nsamples = 145\nvalue = [135, 10]\nclass = 0", fillcolor="#e78a48"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="mean texture <= 19.86\ngini = 0.444\nsamples = 12\nvalue = [4, 8]\nclass = 1", fillcolor="#9ccef2"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 8\nvalue = [0, 8]\nclass = 1", fillcolor="#399de5"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 4\nvalue = [4, 0]\nclass = 0", fillcolor="#e58139"] ;
+9 -> 11 ;
+12 [label="radius error <= 0.184\ngini = 0.03\nsamples = 133\nvalue = [131, 2]\nclass = 0", fillcolor="#e5833c"] ;
+8 -> 12 ;
+13 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = 1", fillcolor="#399de5"] ;
+12 -> 13 ;
+14 [label="gini = 0.015\nsamples = 132\nvalue = [131, 1]\nclass = 0", fillcolor="#e5823b"] ;
+12 -> 14 ;
+}
